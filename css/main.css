@@ -1,0 +1,658 @@
+
+
+.main .sobreMim{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+    background-color: rgb(33, 33, 33);
+    align-items: center;
+    align-content: center;
+}
+
+/*.main .sobreMim .tSobreMim{
+    display: inline-block;
+    width: 100%;
+    background: none;
+    box-shadow: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+}*/
+
+.main .sobreMim div{
+    max-width: 350px;
+    min-width: 100px;
+    margin: 20px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px rgb(254, 198, 37);
+    color: #181818;
+    
+}
+
+.main .sobreMim .tSobreMim{
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    background: none;
+    box-shadow: none;
+    color: white;
+    font-size: 28px;
+    margin: 30px auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.main .sobreMim .tSobreMim h1{
+    width: 190px;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 3px solid rgb(254, 198, 37);
+}
+
+.main .sobreMim div :nth-child(1){
+    font-weight: 600;
+    width: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(254, 198, 37);
+    margin-bottom: 15px;
+}
+
+
+/*SECTION2*/
+
+.habilidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5%;
+    align-content: space-between;
+    /*background: black;*/
+    transition: all 1s ease-in-out;
+}
+
+.habilidades .tHabilidades{
+    display: inline-block;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    background: none;
+    box-shadow: none;
+    color: black;
+    font-size: 28px;
+    margin: 30px auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.habilidades .tHabilidades h1{
+    width: 215px;
+    text-align: left;
+    padding: 5px;
+    border-bottom: 3px solid rgb(254, 198, 37);
+}
+
+.habilidades div{
+    min-width: 100px;
+    background: #3d3d3d;
+    padding: 25px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #181818;
+    color: white;
+}
+
+.habilidades div h2{
+    font-weight: 630;
+    width: 25px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(254, 198, 37);
+    margin-bottom: 25px;
+}
+
+.habilidades div h3{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.habilidades div div{
+    display: flex;
+    position: relative;
+    min-width: 100px;
+    max-width: 230px;
+    width: 220px;
+    height: 2px;
+    padding: 3px;
+    align-items: center;
+    justify-content: left;
+    margin: 5px 0px;
+    background: #aaaaaa;
+    box-shadow: none;
+}
+
+.habilidades div div div{
+    position: absolute;
+    min-width: 0px;
+    height: 2px;
+    margin: 5px -2px;
+    background: linear-gradient(#ccac1f, #fec625, #fec625);
+}
+
+.habilidades div p{
+    font-size: 12px;
+    position: relative;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.habilidades div div .fillHtml{
+    animation: de0-88 5s ease-in-out;
+    width: 88%;
+    /*transition: all 5s ease-in-out;*/
+}
+
+.habilidades div div .fillCss{
+    animation: de0-70 5s ease-in-out;
+    width: 70%;
+    /*transition: all 5s ease-in-out;*/
+}
+
+.habilidades div div .fillJs{
+    animation: de0-38 5s ease-in-out;
+    width: 38%;
+    /*transition: all 5s ease-in-out;*/
+}
+
+.habilidades div div .fillPhp{
+    animation: de0-3 5s ease-in-out;
+    width: 3%;
+    /*transition: all 5s ease-in-out;*/
+}
+
+/*ANIMACAO CARD2 */
+.habilidades div div .fillCorel{
+    animation: de0-75 5s ease-in-out;
+    width: 75%;
+    /*transition: all 5s ease-in-out;*/
+}
+
+.habilidades div div .fillLogo{
+    animation: de0-87 5s ease-in-out;
+    width: 87%;
+    /*transition: all 5s ease-in-out;*/
+}
+
+.habilidades div div .fillBrand{
+    animation: de0-54 5s ease-in-out;
+    width: 54%;
+    /*transition: all 5s ease-in-out;*/
+}
+
+.habilidades div div .fillLayout{
+    animation: de0-68 5s ease-in-out;
+    width: 68%;
+    /*transition: all 5s ease-in-out;*/
+}
+
+/*.fillHtml2{
+    animation: de0-88 5s ease-in-out;
+}*/
+
+.teste{
+    color: green;
+    
+}
+
+@keyframes de0-88{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 88%;
+        max-width: 88%;
+    }
+}
+
+@keyframes de0-70{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 70%;
+        max-width: 70%;
+    }
+}
+
+@keyframes de0-38{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 38%;
+        max-width: 38%;
+    }
+}
+
+@keyframes de0-3{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 3%;
+        max-width: 3%;
+    }
+}
+
+
+@keyframes de0-75{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 75%;
+        max-width: 75%;
+    }
+}
+
+@keyframes de0-87{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 87%;
+        max-width: 87%;
+    }
+}
+
+@keyframes de0-54{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 54%;
+        max-width: 54%;
+    }
+}
+
+@keyframes de0-68{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 68%;
+        max-width: 68%;
+    }
+}
+
+
+
+.portifolio{
+    padding: 5%;
+    align-items: center;
+    align-content: center;
+    margin: -30px 0px 40px 0px;
+}
+
+.txtPort{
+    text-align: center;
+    margin: 50px 0px;
+}
+
+.txtPort .tPortifolio h1{
+    width: 197px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: 5px;
+    border-bottom: 3px solid rgb(254, 198, 37);
+    color: black;
+    font-size: 28px;
+}
+
+.carousel{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    
+    position: relative;
+}
+
+.carousel div{
+    max-width: 300px;
+    min-width: 250px;
+    padding: 25px;
+    margin: 30px auto;
+    background: #3d3d3d;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #181818;
+    text-align: center;
+    color: #ffffff;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.carousel div img{
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px #aaaaaa;
+    border-radius: 50%;
+    border: none;
+}
+
+.carousel div h2{
+    font-weight: 630;
+    width: 75px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(254, 198, 37);
+    margin: 15px auto;
+
+}
+
+.carousel .carousel__actions{
+    position: relative;
+    background: none;
+    border: none;
+    border-radius: none;
+    box-shadow: none;
+
+}
+
+.carousel  #btn__prev, #btn__next{
+    background: #aaa;
+    border-radius: 50%;
+    padding: 8px 16px;
+    position: absolute;
+    border: none;
+    box-shadow: 0px 0px 10px #181818;
+    opacity: .25;
+    outline: none;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 1;
+}
+
+.carousel  #btn__prev:hover, #btn__next :hover{
+    opacity: .5;
+    
+}
+
+.carousel  #btn__prev{
+    left: 2%;
+}
+
+.carousel  #btn__next{
+    right: 2%;
+}
+
+
+
+.precos{
+    padding: 10%;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(33, 33, 33);
+}
+
+.txtPreco{
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid rgb(254, 198, 37);
+    width: 140px;
+    min-width: 100px;
+    left: 50%;
+    transform: translateX(-60px);
+    color: white;
+    padding: 3px;
+}
+
+.txtPreco h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.cardsPreco{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+
+.cardsPreco div{
+    max-width: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    padding: 20px;
+    margin: 30px auto;
+    background: white;
+    color: green;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px rgb(254, 198, 37);
+    text-align: center;
+    color: #ffffff;
+    align-content: center;
+    align-items: center;
+}
+
+.cardsPreco div div{
+    background: none;
+    border-radius: none;
+    box-shadow: none;
+    text-align: left;
+    padding: none;
+    align-content: center;
+    align-items: center;
+    color: black;
+    margin-top: -15px;
+}
+
+.cardsPreco div button{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    background: #fec625;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    box-shadow: 0px 0px 10px #aaa;
+    color: white;
+}
+
+.cardsPreco div .btnStand{
+    background: white;
+    color: #fec625;
+}
+
+.cardsPreco div ul li{
+    list-style: none;
+    line-height: 35px;
+}
+
+.cardsPreco div h2{
+    color: #181818;
+    margin: 0px 0px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 30px;
+}
+
+.cardsPreco div h1{
+    color: rgb(254, 198, 37);
+    margin: 30px 0px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 28px;
+    letter-spacing: 2px;
+
+}
+
+.cardsPreco .standard{
+    position: relative;
+    background: rgb(254, 198, 37);
+    box-shadow: 6px 6px 0px white;
+}
+
+
+
+.cardsPreco .standard :nth-child(1){
+    color: #181818;
+}
+
+.cardsPreco .standard :nth-child(2){
+    color: #fff;
+}
+
+.cardsPreco .standard div :nth-child(1){
+    color: black;
+}
+
+.cardsPreco .standard div :nth-child(2){
+    color: #000;
+}
+
+
+.contactar{
+    position: relative;
+    padding: 10%;
+    background: #3d3d3d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.txtContactar{
+    position: relative;
+    text-align: center;
+    border-bottom: 3px solid rgb(254, 198, 37);
+    width: 200px;
+    min-width: 100px;
+    left: 50%;
+    transform: translateX(-110px);
+    margin-bottom: 50px;
+    color: white;
+    padding: 3px;
+}
+
+.txtContactar h1{
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding: none;
+}
+
+.contactar form{
+    position: relative;
+    min-width: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.contactar fieldset{
+    position: relative;
+    min-width: 180px;
+    max-width: 500px;
+    border:2px solid #fec625;
+    border-radius: 10px;
+    text-align: left;
+    padding: 0px 30px 50px 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contactar fieldset legend{
+    padding: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contactar fieldset .inputBox{
+    position: relative;
+}
+
+.contactar fieldset .inputUser{
+    width: 100%;
+    max-width: 600px;
+    min-width: 100px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fec625;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    letter-spacing: 1.8px;
+}
+
+.contactar fieldset div{
+    margin: 20px 0px 25px 0px;
+    
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    color: #fff;
+    letter-spacing: 1.8px;
+}
+
+.inputUser:focus ~ .labelInput, .inputUser:valid ~ .labelInput{
+    top: -18px;
+    font-size: 13px;
+    color: rgba(254, 198, 37, .5);
+}
+
+.contactar fieldset button{
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0px -10px 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    background: #fec625;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    box-shadow: 0px 0px 10px #aaa;
+    color: white;
+}
+
+
+
+

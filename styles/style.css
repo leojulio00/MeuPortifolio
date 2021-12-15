@@ -1,0 +1,263 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: roboto, sans-serif; 
+}
+
+
+header{
+  width: 100%;
+  height: 100vh;
+  background: cyan;
+}
+
+nav{
+  position: fixed;
+  z-index: 12;
+  top: 0px;
+  box-shadow: 0px 0px 12px rgba(0,0,0, .68);
+  background: cyan;
+  backgroun: #1d1e19;
+  width: 94%;
+  padding: 15px 35px;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+
+nav .logo{
+  font-family: lucida, sans-serif;
+  position: absolute;
+  display: inline-block;
+  width: 150px;
+  margin-top: -17.8px;
+}
+
+.logo img{
+  width: 150px;
+}
+
+nav ul{
+  float: right;
+  position: reltive;
+  margn-rigth: 25px;
+  list-style: none;
+  
+}
+
+nav ul li{
+  display: inline-block;
+  padding: 10px;
+  background: none;
+  border: none;
+  margin: 0px 10px;
+  padding: 5px;
+  transition: transform .4s linear;
+}
+
+nav ul li a{
+  position: ;
+  font-size: 24px;
+  display: block;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav ul #active, li:hover{
+  border-bottom: 2.6px solid white;
+  transition: transform .4s linear;
+}
+
+.checkbtn{
+  float: right;
+  margin-right: 15px;
+  margin-top: 5px;
+}
+
+label #btn, label #cnlc{
+  color: white;
+  font-size: 30px;
+  float: rigth;
+  font-weight: bold;
+  line-height: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  position: absolute;
+  display: none;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background: blue;
+}
+
+.foto{
+  max-width: 300px;
+  position: relative;
+  align-items: center;
+  align-content: center;
+  background: #00FFe9;
+  border: none;
+  border-radius: 50% 50% 0px 0px;
+  text-align: center;
+  padding-bottom: -10px;
+}
+
+.hero .txt{
+  position: relative;
+  display: inline-block;
+  margin: 30px;
+}
+
+.hero .foto img{
+  width: 230px;
+  
+}
+
+
+@media (max-width: 1118px){
+  nav .logo{
+    left: 10%;
+  }
+  nav ul li a{
+    font-size: 12px;
+    
+  }
+}
+
+@media (max-width: 1118px){
+  nav .logo{
+    font-size: 39px;
+    left: 8%;
+    top: 22px;
+  }
+  nav ul li a{
+    font-size: 14px;
+    
+  }
+  
+  
+  
+}
+
+ @media (max-width: 944px){
+  nav .logo{
+    font-size: 34px;
+    left: 8%;
+  }
+  nav ul li a{
+    font-size: 12px;
+    
+  }
+   
+   
+   
+}
+
+ @media (max-width: 944px){
+  nav .logo{
+    font-size: 34px;
+    left: 8%;
+  }
+   
+   nav{
+     height: 39px;
+   }
+  nav ul li a{
+    font-size: 12px;
+    
+  }
+}
+
+ @media (max-width: 860px){
+   
+   nav{
+     margin-top: -10px;
+     
+   }
+  nav .logo{
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    margi-top: -17.8px;
+    left: 7%;
+  }
+   
+   .logo img{
+     width: 120px;
+     margin-top: 15px;
+}
+   
+    label #btn{
+    display: block;
+      
+  }
+   
+   ul{
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, .9); 
+     top: 67px;
+     left: -100%;
+     text-align: center;
+     align-content: center;
+     transition: all .5s;
+   }
+   
+   nav ul li{
+     display: block;
+     width: 120px;
+     margin: 0 auto;
+     margin-top: 51px;
+     padding: 10px;
+     text-align: center;
+   }
+   
+   #check:checked ~ .mtop{
+     left: 0px;
+   }
+   
+   #check:checked ~ label #btn{
+     display: none;
+   }
+   
+   #check:checked ~ label #cnlc{
+     display: block;
+   }
+   
+  nav ul li a{
+    font-size: 16px;
+    
+  }
+   
+   
+   .foto{
+     max-width: 290px;
+     margin-right: 90px;
+     padding-bottom: -10px;
+}
+
+   
+   
+}
+
+
+
+
+
+

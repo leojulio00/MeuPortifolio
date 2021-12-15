@@ -1,0 +1,459 @@
+
+/*Versão DeskTop*/
+
+.container{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+
+main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1.5fr 1.8fr 1ft;
+  grid-template-areas: 
+  "foto1 historia historia"
+  "habilidade habilidade habilidade"
+  "portifolio portifolio portifolio"
+  "contactos contactos contactos";
+  grid-gap: 15px;
+  font-size: px;
+  padding-top: 90px;
+}
+
+/*Parte 1*/
+
+.foto1{
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 12px rgba(0,0,0, .6);
+}
+
+
+.ft1{
+  grid-area: foto1;
+  width: 350px;
+  margin: 50px 10px 20px 50px;
+  
+}
+
+.historia{
+  position: absolue;
+  grid-area: historia;
+  margin: 50px 50px 20px 10px;
+  width: 490px;
+}
+
+.historia #nome1{
+  text-align: center;
+  margin-bottom: 10px
+}
+
+.historia #histo{
+  position: relative;
+  font-size: 12p;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/*Parte 2*/
+
+.habilidades{
+  grid-area: habilidade;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .1fr 1fr;
+  grid-template-areas:
+  "mais mais mais"
+  "subhabi subhabi subhabi";
+}
+
+.habilidades .subhabi div{
+  width: 200px;
+  margin: 0 auto;
+  margin-left: 60px;
+  text-align: center;
+}
+
+.habilidades .subhabi div img{
+  width: 100%;
+  border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 5px 3px 10px rgba(0,0,0, .5);
+}
+
+.subhabi{
+  display: flex;
+  grid-area: subhabi;
+  margin: 10px 0px 30px 0px;
+}
+
+.maissobre{
+  grid-area: mais;
+  margin: 20px 0px;
+  padding-top: 6px;
+  vertical-align: center;
+  text-align: center;
+}
+
+.maissobre .border_mais_sobre{
+  width: 250px;
+  position: fixe;
+  margin: 0 auto;
+  margin-top: -20px;
+  text-align: center;
+  border: 10px cyan solid;
+}
+
+/*.maissobre .border_mais_sobre{
+  margin: 0 auto;
+  margin-top: -30px;
+  margin-right: 250px;
+  width:250px;
+  border: 20px cyan solid;
+}*/
+
+.fade-in{
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+/*Parte 3*/
+
+.portifolio{
+  position: relative;
+  grid-area: portifolio;
+  background: cyan;
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+  padding: 20px 50px 30px 50px;
+}
+
+.subport{
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  margin: 30px 0px 10px 0px;
+  align-items: center;
+  align-content: center;
+}
+
+.portifolio .subport div{
+  min-width: 180px;
+  margin: 0px 20px;
+}
+
+.portifolio .subport div img{
+  width: 100%;
+  border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 5px 3px 10px rgba(0,0,0, .5);
+}
+
+.portifolio .porti .txtportifolio{
+  color: black;
+  display: block;
+  text-shadow: 4px 5px 1px white;
+}
+
+/*Parte 4*/
+
+.contactos{
+  grid-area: contactos;
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.txtcontactos{
+  margin: 0px 0px 20px 0px;
+  padding-top: 6px;
+  vertical-align: center;
+  text-align: center
+}
+
+.border_contactos{
+   width: 250px;
+  position: fixe;
+  margin: 0 auto;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 10px cyan solid;
+}
+
+.subcont{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+.subcont .cnt1{
+  width: 80px;
+}
+
+[data-anime]{
+  opacity: 1;
+  transition: .3s;
+}
+
+[data-anime="left"]{
+  transform: translateX(-70px) rotate(6deg);
+}
+
+[data-anime="rigth"]{
+  transform: translateX(70px);
+}
+
+[data-anime="bottom"]{
+  transform: translateY(100px);
+}
+
+[data-anime].animacao{
+  opacity: 1;
+  transform: translateX(0px) rotate(0deg);
+}
+
+
+/*Versão Mobile*/
+
+@media (max-width: 860px){
+  main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.06fr 0.05fr 0.01fr .03fr .5fr .01fr;
+    grid-template-areas: 
+    "foto1"
+    "historia"
+    "maissobre"
+    "habilidade"
+    "portifolio"
+    "contactos"
+    "tdscont";
+    grid-gap: 10px;
+    margin: 10px;
+    padding-top: 60px;
+  }
+  
+  /*Parte 1*/
+  
+  .ft1{
+    grid-area: foto1;
+    width: 230px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 25px;
+  }
+  
+  .historia{
+    grid-area: historia;
+    margin: 0 auto;
+    padding: 10px;
+    width: 270px;
+  }
+  
+  #nome1{
+    font-size: 24px;
+  }
+  
+  .historia #histo{
+    font-size: 18px;
+    text-align: justify;
+    margin-top: 10px;
+    width: 100%;
+}
+  
+  /*Parte 2*/
+  
+  .habilidades{
+    grid-area: habilidade;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .01fr 1fr;
+    grid-template-areas:
+      "mais"
+      "subhabi";
+    padding: 0px;
+    margin: 0 auto;
+  }
+  
+  .maissobre{
+    grid-area: mais;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  
+  .maissobre .border_mais_sobre{
+    width: 120px;
+    margin-top: -15px;
+    margin-right: 30px;
+    border: 12px cyan solid;
+}
+  
+  .subhabi{
+    grid-area: subhabi;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .15fr .15fr .15fr;
+    grid-template-areas: 
+    "qual1"
+    "qual2"
+    "qual3";
+    grid-gap: 10px;
+    
+  }
+  
+  .habilidades .subhabi div{
+  width: 210px;
+  margin: 0 auto;
+    margin-bottom: 30px;
+  text-align: center;
+  }
+  
+  .habilidades .subhabi div img{
+  width: 100%;
+  border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 5px 3px 10px rgba(0,0,0, .5);
+    margin-bottom:15px; 
+}
+
+  
+  .qual1{
+    grid-area: qual1;
+    margin-top: 25px;
+  }
+  
+  .qual2{
+    grid-area: qual2;
+    margin-top: 25px;
+  }
+  
+   .qual3{
+    grid-area: qual3;
+    margin-top: 25px; 
+  }
+  
+  /*Parte 3*/
+  
+  .portifolio{
+    positio: relative;
+    grid-area: portifolio;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .01fr 1fr;
+    grid-template-areas: 
+    "port"
+    "subport";
+    grid-gap: 10px;
+    margin: -10px;
+    padding: 0px 20px;
+  }
+  
+  .porti{
+    grid-area: port;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .subport{
+    position: absolute;
+    grid-area: subport;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    margin: 0 auto;
+    margin-ight: 30px;
+    width: 100%;
+  }
+  
+  .portifolio .subport div{
+    position: relative;
+    min-width: 200px;
+    margin: 0 auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .portifolio .subport div img{
+    width: 100%;
+  }
+  
+  .arrow--left{
+    position: fixed;
+    float: left;
+    width: 0px;
+    margin: 0;
+    padding: -30px;
+    border: none;
+    border-radius: 50%;
+    background: red;
+    z-index: 20;
+  }
+  
+  .arrow--right{
+    position: fixed;
+    float: right;
+    width: -70px;
+    height: 60px;
+    margin: 0;
+    padding: -30px;
+    border-radius: 50;
+    background: red;
+    z-index: 5;
+  }
+  
+  
+  /*Parte 4*/
+  
+  .txtcontactos{
+    grid-area: contactos;
+    
+  }
+  
+  .subcont{
+    grid-area: tdscont;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .border_contactos{
+    width: 70px;
+    position: fixe;
+    margin: 0 auto;
+    margin-top: -15px;
+    margin-right: 110px;
+    text-align: center;
+    border: 10px cyan solid;
+}
+  .subcont .cnt1{
+  width: 50px;
+}
+  
+  .subcont a{
+    margin: 0 auto;
+  }
+  
+  .cnt1{
+    width: 80px;
+  }
+  
+  .cnt2{
+    width: 100px;
+  }
+  
+  .cnt3{
+    width: 100px;
+  }
+  
+  
+}
+
+

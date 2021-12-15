@@ -1,0 +1,22 @@
+.footer{
+    padding: 5%;
+    background: #181818;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footer .social{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.footer .social img{
+    width: 35px;
+}
