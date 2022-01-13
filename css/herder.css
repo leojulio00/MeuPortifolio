@@ -92,7 +92,7 @@
     color: var(--branco);
     font-size: 30px;
     float: rigth;
-    font-weight: bold;
+    font-weight: 300;
     line-height: 40px;
     margin-right: 40px;
     cursor: pointer;
@@ -109,6 +109,17 @@
     display: none;
   }
 
+  /*.aparecer{
+    transition: all ease-in .5s;
+  }
+
+  .desaparecer{
+    opacty: 0;
+    
+    display: none;
+  }*/
+
+  
   /*HERO SIDE*/
   .hero{
     position: relative;
@@ -206,6 +217,10 @@
       background: --preto1;
       align-items: center;
       z-index: 10;
+    }
+
+    .navbar .btn--resp{
+      padding-left: 80%;
     }
   
 

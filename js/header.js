@@ -20,6 +20,9 @@ sbtn.addEventListener("click", () => {
     menuList.style.left = "0px";
     sbtn.style.display = "none";
     cancelar.style.display = "block";
+    //cancelar.classList.add("aparecer")
+    //sbtn.classList.add("desaparecer")
+    //cancelar.classList.add("aparecer")
 })
 
 cancelar.addEventListener("click", () => {
