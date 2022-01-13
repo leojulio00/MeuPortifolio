@@ -4,7 +4,14 @@
 var menuList = document.getElementById("menu");
 var sbtn = document.getElementById("btn");
 var cancelar = document.getElementById("cnlc");
+var listaMenu = document.querySelectorAll(".animacaoMenu")
 
+//Animacao do click menu
+function linkActivo(){
+    listaMenu.forEach((item) => item.classList.remove("active"))
+    this.classList.add("active")
+}
+listaMenu.forEach((item) => item.addEventListener("click", linkActivo))
 
 
 //document.getElementById("btn").innerHTML = "leo";
@@ -20,3 +27,5 @@ cancelar.addEventListener("click", () => {
     sbtn.style.display = "block";
     cancelar.style.display = "none";
 })
+
+
