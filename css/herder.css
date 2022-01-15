@@ -2,6 +2,7 @@
     --preto1: #181818;
     --ouro: #fec625;
     --branco: #fff;
+    --fonte3:Consolas, 'Courier New', monospace; 
   }
   
   .cabecalho{
@@ -45,7 +46,7 @@
     text-align: right;
     grid-area: menu;
     justify-content: end;
-    margin-left: 20%;
+    margin-left: 10%;
   }
 
   .navBar .navbar ul{
@@ -61,14 +62,14 @@
     background: none;
     border: none;
     margin: 0px 5px;
-    max-width: 105.28px;
+    max-widt: 105.28px;
 
     transition: transform .7s ease-in-out;
   }
 
 
   .navBar .navbar ul li a{
-    font-size: 13px;
+    font-size: 12px;
     display: block;
     color: var(--branco);
     font-weight: 300;
@@ -82,6 +83,8 @@
     border-bottom: 2.6px solid var(--ouro);
     transition: all .3s ease-in-out;
   }
+
+ 
 
   .checkbtn{
     grid-area: menu;
@@ -151,6 +154,7 @@
   }
 
   .hero .txt .apresentacao{
+    font-family: var(--fonte3);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -158,6 +162,7 @@
   }
 
   .hero .txt .apresentacao #apresentacao1{
+    font-family: var(--fonte3);
     font-size: 55px;
     font-weight: bolder;
     letter-spacing: 3px;
@@ -195,6 +200,7 @@
  
 
   .hero .txt :nth-child(2){
+    font-family: var(--fonte3);
     font-size: 21px;
     margin-bottom: 25px;
     color: var(--branco);
@@ -228,7 +234,7 @@
       background: var(--ouro);
       border: none;
       border-radius: 35px;
-      box-shadow: 0px 0px 10px rgba(245, 245, 245, .8);
+      box-shadow: 0px 0px 5px rgba(245, 245, 245, .8);
       color: var(--branco);
       outline: none;
   }

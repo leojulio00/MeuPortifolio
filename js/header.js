@@ -34,13 +34,15 @@ cancelar.addEventListener("click", () => {
 //HERO ANIMATION
 var apresentacao1 = document.querySelector("#apresentacao1")
 var apresentacao2 = document.querySelector("#apresentacao2")
-const frases = ["Ola, sou", "Leonildo Júlio!!!"]
+const frases = ["Olá, sou", "Leonildo Júlio!!!"]
 let contador = 0
 let index = 0
 let textoCorrente = ""
 let letra = ""
 
 function type(){
+
+    
     if(contador === frases.length){
         contador = 0
     }
