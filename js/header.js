@@ -1,10 +1,16 @@
 //Menu click 
 //window.prompt("qual e o teu nome?")
 
+var navBar = document.querySelector(".navBar")
 var menuList = document.getElementById("menu");
 var sbtn = document.getElementById("btn");
 var cancelar = document.getElementById("cnlc");
 var listaMenu = document.querySelectorAll(".animacaoMenu")
+var input = document.querySelector("#menu-hamburguer")
+var menuHamburger = document.querySelector(".hamburger")
+var logo = document.querySelector(".logoleo")
+var habil = document.querySelector(".habilidades")
+var precos = document.querySelector(".precos")
 
 //Animacao do click menu
 function linkActivo(){
@@ -16,7 +22,7 @@ listaMenu.forEach((item) => item.addEventListener("click", linkActivo))
 
 //document.getElementById("btn").innerHTML = "leo";
 
-sbtn.addEventListener("click", () => {
+/*sbtn.addEventListener("click", () => {
     menuList.style.left = "0px";
     sbtn.style.display = "none";
     cancelar.style.display = "block";
@@ -29,7 +35,47 @@ cancelar.addEventListener("click", () => {
     menuList.style.left = "-100%";
     sbtn.style.display = "block";
     cancelar.style.display = "none";
+})*/
+
+input.addEventListener("click", () => {
+    if(input.checked){
+        menuList.style.left = "0px";
+    }else{
+        menuList.style.left = "-100%";
+    }
 })
+
+window.addEventListener("scroll", () => {
+    console.log(habil.offsetHeight)
+    console.log(window.pageYOffset)
+    if(window.pageYOffset > 100 && window.pageYOffset < habil.offsetTop){
+        navBar.style.background = "#fff"
+        for (let index = 0; index < listaMenu.length; index++) {
+            const element = listaMenu[index];
+            element.style.color = "#181818"
+            //menuHamburger.style.color = "#181818"
+        } 
+        logo.src = "img/logo.png"
+    }else{
+        navBar.style.background = "#181818"
+        for (let index = 0; index < listaMenu.length; index++) {
+            const element = listaMenu[index];
+            element.style.color = "#fff"
+        } 
+        logo.src = "img/logo00.png"
+    }
+
+    if(window.pageYOffset > precos.offsetTop - 20){
+        navBar.style.background = "#efefef"
+        for (let index = 0; index < listaMenu.length; index++) {
+            const element = listaMenu[index];
+            element.style.color = "#181818"
+        } 
+        logo.src = "img/logo.png"
+    }
+})
+
+
 
 //HERO ANIMATION
 var apresentacao1 = document.querySelector("#apresentacao1")
@@ -64,5 +110,7 @@ function type(){
 }
 
 type()
+
+
 
 
