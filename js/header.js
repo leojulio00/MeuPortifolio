@@ -53,7 +53,7 @@ window.addEventListener("scroll", () => {
         for (let index = 0; index < listaMenu.length; index++) {
             const element = listaMenu[index];
             element.style.color = "#181818"
-            //menuHamburger.style.color = "#181818"
+            
         } 
         logo.src = "img/logo.png"
     }else{
