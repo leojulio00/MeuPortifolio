@@ -46,16 +46,26 @@ input.addEventListener("click", () => {
 })
 
 window.addEventListener("scroll", () => {
-    console.log(habil.offsetHeight)
-    console.log(window.pageYOffset)
+     
     if(window.pageYOffset > 100 && window.pageYOffset < habil.offsetTop){
         navBar.style.background = "#fff"
         for (let index = 0; index < listaMenu.length; index++) {
             const element = listaMenu[index];
             element.style.color = "#181818"
-            
-        } 
+            if(window.screen.width < 840){
+                
+                /*for (let index = 0; index < listaMenu.length; index++) {
+                    const element = listaMenu[index];
+                    element.style.color = "#fff"
+                    
+                } */
+                element.style.color = "#fff"
+            }
+        }
+        
+        
         logo.src = "img/logo.png"
+        
     }else{
         navBar.style.background = "#181818"
         for (let index = 0; index < listaMenu.length; index++) {
@@ -70,6 +80,15 @@ window.addEventListener("scroll", () => {
         for (let index = 0; index < listaMenu.length; index++) {
             const element = listaMenu[index];
             element.style.color = "#181818"
+
+            if(window.screen.width < 840){
+                /*for (let index = 0; index < listaMenu.length; index++) {
+                    const element = listaMenu[index];
+                    element.style.color = "#fff"
+                    
+                } */
+                element.style.color = "#fff"
+            }
         } 
         logo.src = "img/logo.png"
     }

@@ -1,12 +1,12 @@
 
 
-var habil = document.querySelector(".habilidades");
+var habil = document.querySelector(".habilidades")
 var aJanela = window.pageYOffset; 
-const windowTop = window.scrollHeight
+const windowTop = window.scroll.height
 
 console.log(windowTop)
 
-function mudarCor(){
+/*function mudarCor(){
     if(habil > aJanela){
         alert(aJanela);
     }
@@ -31,7 +31,7 @@ addEventListener("scroll", function() {
     mudarCor();
 });
 
-
+*/
 
 //ANIMACAO HABILIDADES
 
