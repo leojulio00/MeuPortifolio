@@ -47,7 +47,7 @@ input.addEventListener("click", () => {
 
 window.addEventListener("scroll", () => {
      
-    if(window.pageYOffset > 100 && window.pageYOffset < habil.offsetTop){
+    if(window.pageYOffset > 100 && window.pageYOffset < habil.offsetTop - 60){
         navBar.style.background = "#fff"
         for (let index = 0; index < listaMenu.length; index++) {
             const element = listaMenu[index];
@@ -75,7 +75,7 @@ window.addEventListener("scroll", () => {
         logo.src = "img/logo00.png"
     }
 
-    if(window.pageYOffset > precos.offsetTop - 20){
+    if(window.pageYOffset > precos.offsetTop - 80){
         navBar.style.background = "#efefef"
         for (let index = 0; index < listaMenu.length; index++) {
             const element = listaMenu[index];

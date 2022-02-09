@@ -1,8 +1,9 @@
 
-
+var body = document.querySelector(".body")
 var habil = document.querySelector(".habilidades")
+var precos = document.querySelector(".precos")
 var aJanela = window.pageYOffset; 
-const windowTop = window.scroll.height
+const windowTop = window.screen.height
 
 console.log(windowTop)
 
@@ -32,6 +33,35 @@ addEventListener("scroll", function() {
 });
 
 */
+
+//ANIMACAO DO BODY
+body.style.background = "#212121"
+console.log(windowTop - (windowTop * 0.3) )
+
+
+window.addEventListener("scroll", () => {
+    if(window.pageYOffset > habil.offsetTop - (windowTop - (windowTop * 0.7))){
+        //console.log("passou")
+        body.style.background = "#fff"
+    }else{
+        body.style.background = "#212121"
+    }
+    if(window.pageYOffset > precos.offsetTop - (windowTop - (windowTop * 0.7))){
+       //console.log("nao passar")
+        body.style.background = "#212121"
+    } 
+    
+   //console.log(window.pageYOffset)
+})
+
+/*window.addEventListener("scroll", () => {
+    if(window.pageYOffset > precos.offsetTop - (windowTop - (windowTop * 0.7))){
+        console.log("passouffffffff")
+        //body.style.background = "#212121"
+    }else{
+        //body.style.background = "#fff"
+    }
+})*/
 
 //ANIMACAO HABILIDADES
 

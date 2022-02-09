@@ -8,4 +8,5 @@
 body{
     scrollbar-width: 2px;
     scrollbar-color: rgb(254, 198, 37);
+    transition: 0.4s ease-in-out;
 }
