@@ -1,6 +1,9 @@
 
 var body = document.querySelector(".body")
 var habil = document.querySelector(".habilidades")
+var habilCard1 = document.querySelector(".habilidades .card1")
+var habilCard2 = document.querySelector(".habilidades .card2")
+var portifolio = document.querySelector(".portifolio")
 var precos = document.querySelector(".precos")
 var aJanela = window.pageYOffset; 
 const windowTop = window.screen.height
@@ -65,95 +68,133 @@ window.addEventListener("scroll", () => {
 
 //ANIMACAO HABILIDADES
 
-const numbHtml = document.querySelector(".nFillHtml");
-const numbCss = document.querySelector(".nFillCss");
-const numbJs = document.querySelector(".nFillJs");
-const numbPhp = document.querySelector(".nFillPhp");
-let counterHtml = 0;
-let counterCss = 0;
-let counterJs = 0;
-let counterPhp = 0;
+window.addEventListener("scroll", ()=>{
 
+    if(window.pageYOffset > habilCard1.offsetTop - 200 && window.pageYOffset < portifolio.offsetTop + 200){
+        const fillHtml = document.querySelector(".fillHtml")
+        const fillCss = document.querySelector(".fillCss")
+        const fillJs = document.querySelector(".fillJs")
+        const fillPhp = document.querySelector(".fillPhp")
+        const numbHtml = document.querySelector(".nFillHtml");
+        const numbCss = document.querySelector(".nFillCss");
+        const numbJs = document.querySelector(".nFillJs");
+        const numbPhp = document.querySelector(".nFillPhp");
+        let counterHtml = 0;
+        let counterCss = 0;
+        let counterJs = 0;
+        let counterPhp = 0;
 
-setInterval( () => {
-    if(counterHtml == 88){
-        clearInterval;
+        fillHtml.classList.add("fillHtmlAni")
+        fillCss.classList.add("fillCssAni")
+        fillJs.classList.add("fillJsAni")
+        fillPhp.classList.add("fillPhpAni")
+        setInterval( () => {
+            if(counterHtml == 88){
+                clearInterval;
+            }else{
+                counterHtml++;
+                numbHtml.textContent = counterHtml + "%";
+            }
+        }, 40)
+
+        setInterval( () => {
+            if(counterCss == 70){
+                clearInterval;
+            }else{
+                counterCss++;
+                numbCss.textContent = counterCss + "%";
+            }
+        }, 49)
+
+        setInterval( () => {
+            if(counterJs == 38){
+                clearInterval;
+            }else{
+                counterJs++;
+                numbJs.textContent = counterJs + "%";
+            }
+        }, 75)
+
+        setInterval( () => {
+            if(counterPhp == 3){
+                clearInterval;
+            }else{
+                counterPhp++;
+                numbPhp.textContent = counterPhp + "%";
+            }
+        }, 100)
     }else{
-        counterHtml++;
-        numbHtml.textContent = counterHtml + "%";
-    }
-}, 40)
+        //numbHtml.textContent = 88 + "%"
+        window.removeEventListener("scroll", () => {
 
-setInterval( () => {
-    if(counterCss == 70){
-        clearInterval;
-    }else{
-        counterCss++;
-        numbCss.textContent = counterCss + "%";
+        })
     }
-}, 49)
+    
+})
 
-setInterval( () => {
-    if(counterJs == 38){
-        clearInterval;
-    }else{
-        counterJs++;
-        numbJs.textContent = counterJs + "%";
+window.addEventListener("scroll", ()=>{
+
+    if(window.pageYOffset > habilCard2.offsetTop - 200 && window.pageYOffset < portifolio.offsetTop + 200){
+        console.log("temn")
+        var fillCorel = document.querySelector(".fillCorel")
+        var fillLogo = document.querySelector(".fillLogo")
+        var fillBrand = document.querySelector(".fillBrand")
+        var fillLayout = document.querySelector(".fillLayout")
+        var numbCorel = document.querySelector(".nFillCorel");
+        var numbLogo = document.querySelector(".nFillLogo");
+        var numbBrand = document.querySelector(".nFillBrand");
+        var numbLayout = document.querySelector(".nFillLayout");
+        var counterCorel = 0;
+        var counterLogo = 0;
+        var counterBrand = 0;
+        var counterLayout = 0;
+
+        fillCorel.classList.add("fillCorelAni")
+        fillLogo.classList.add("fillLogoAni")
+        fillBrand.classList.add("fillBrandAni")
+        fillLayout.classList.add("fillLayoutAni")
+
+        setInterval( () => {
+            if(counterCorel == 75){
+                clearInterval;
+            }else{
+                counterCorel++;
+                numbCorel.textContent = counterCorel + "%";
+            }
+        }, 50);
+
+        setInterval( () => {
+            if(counterLogo == 87){
+                clearInterval;
+            }else{
+                counterLogo++;
+                numbLogo.textContent = counterLogo + "%";
+            }
+        }, 45);
+
+        setInterval( () => {
+            if(counterBrand == 54){
+                clearInterval;
+            }else{
+                counterBrand++;
+                numbBrand.textContent = counterBrand + "%";
+            }
+        }, 64);
+
+        setInterval( () => {
+            if(counterLayout == 68){
+                clearInterval;
+            }else{
+                counterLayout++;
+                numbLayout.textContent = counterLayout + "%";
+            }
+        }, 42);
     }
-}, 75)
+    
+})
 
-setInterval( () => {
-    if(counterPhp == 3){
-        clearInterval;
-    }else{
-        counterPhp++;
-        numbPhp.textContent = counterPhp + "%";
-    }
-}, 100)
 
-const numbCorel = document.querySelector(".nFillCorel");
-const numbLogo = document.querySelector(".nFillLogo");
-const numbBrand = document.querySelector(".nFillBrand");
-const numbLayout = document.querySelector(".nFillLayout");
-let counterCorel = 0;
-let counterLogo = 0;
-let counterBrand = 0;
-let counterLayout = 0;
 
-setInterval( () => {
-    if(counterCorel == 75){
-        clearInterval;
-    }else{
-        counterCorel++;
-        numbCorel.textContent = counterCorel + "%";
-    }
-}, 50);
 
-setInterval( () => {
-    if(counterLogo == 87){
-        clearInterval;
-    }else{
-        counterLogo++;
-        numbLogo.textContent = counterLogo + "%";
-    }
-}, 45);
-
-setInterval( () => {
-    if(counterBrand == 54){
-        clearInterval;
-    }else{
-        counterBrand++;
-        numbBrand.textContent = counterBrand + "%";
-    }
-}, 64);
-
-setInterval( () => {
-    if(counterLayout == 68){
-        clearInterval;
-    }else{
-        counterLayout++;
-        numbLayout.textContent = counterLayout + "%";
-    }
-}, 42);
  
 

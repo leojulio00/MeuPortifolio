@@ -158,50 +158,50 @@
     margin-bottom: 10px;
 }
 
-.habilidades div div .fillHtml{
+.habilidades div div .fillHtmlAni{
     animation: de0-88 5s ease-in-out;
     width: 88%;
     /*transition: all 5s ease-in-out;*/
 }
 
-.habilidades div div .fillCss{
+.habilidades div div .fillCssAni{
     animation: de0-70 5s ease-in-out;
     width: 70%;
     /*transition: all 5s ease-in-out;*/
 }
 
-.habilidades div div .fillJs{
+.habilidades div div .fillJsAni{
     animation: de0-38 5s ease-in-out;
     width: 38%;
     /*transition: all 5s ease-in-out;*/
 }
 
-.habilidades div div .fillPhp{
+.habilidades div div .fillPhpAni{
     animation: de0-3 5s ease-in-out;
     width: 3%;
     /*transition: all 5s ease-in-out;*/
 }
 
 /*ANIMACAO CARD2 */
-.habilidades div div .fillCorel{
+.habilidades div div .fillCorelAni{
     animation: de0-75 5s ease-in-out;
     width: 75%;
     /*transition: all 5s ease-in-out;*/
 }
 
-.habilidades div div .fillLogo{
+.habilidades div div .fillLogoAni{
     animation: de0-87 5s ease-in-out;
     width: 87%;
     /*transition: all 5s ease-in-out;*/
 }
 
-.habilidades div div .fillBrand{
+.habilidades div div .fillBrandAni{
     animation: de0-54 5s ease-in-out;
     width: 54%;
     /*transition: all 5s ease-in-out;*/
 }
 
-.habilidades div div .fillLayout{
+.habilidades div div .fillLayoutAni{
     animation: de0-68 5s ease-in-out;
     width: 68%;
     /*transition: all 5s ease-in-out;*/
