@@ -68,21 +68,36 @@ window.addEventListener("scroll", () => {
 
 //ANIMACAO HABILIDADES
 
+        var fillHtml = document.querySelector(".fillHtml")
+        var fillCss = document.querySelector(".fillCss")
+        var fillJs = document.querySelector(".fillJs")
+        var fillPhp = document.querySelector(".fillPhp")
+        var numbHtml = document.querySelector(".nFillHtml");
+        var numbCss = document.querySelector(".nFillCss");
+        var numbJs = document.querySelector(".nFillJs");
+        var numbPhp = document.querySelector(".nFillPhp");
+        var counterHtml = 0;
+        var counterCss = 0;
+        var counterJs = 0;
+        var counterPhp = 0;
+
+        var fillCorel = document.querySelector(".fillCorel")
+        var fillLogo = document.querySelector(".fillLogo")
+        var fillBrand = document.querySelector(".fillBrand")
+        var fillLayout = document.querySelector(".fillLayout")
+        var numbCorel = document.querySelector(".nFillCorel");
+        var numbLogo = document.querySelector(".nFillLogo");
+        var numbBrand = document.querySelector(".nFillBrand");
+        var numbLayout = document.querySelector(".nFillLayout");
+        var counterCorel = 0;
+        var counterLogo = 0;
+        var counterBrand = 0;
+        var counterLayout = 0;
+
 window.addEventListener("scroll", ()=>{
 
     if(window.pageYOffset > habilCard1.offsetTop - 200 && window.pageYOffset < portifolio.offsetTop + 200){
-        const fillHtml = document.querySelector(".fillHtml")
-        const fillCss = document.querySelector(".fillCss")
-        const fillJs = document.querySelector(".fillJs")
-        const fillPhp = document.querySelector(".fillPhp")
-        const numbHtml = document.querySelector(".nFillHtml");
-        const numbCss = document.querySelector(".nFillCss");
-        const numbJs = document.querySelector(".nFillJs");
-        const numbPhp = document.querySelector(".nFillPhp");
-        let counterHtml = 0;
-        let counterCss = 0;
-        let counterJs = 0;
-        let counterPhp = 0;
+        
 
         fillHtml.classList.add("fillHtmlAni")
         fillCss.classList.add("fillCssAni")
@@ -132,22 +147,13 @@ window.addEventListener("scroll", ()=>{
     
 })
 
+
+
 window.addEventListener("scroll", ()=>{
 
     if(window.pageYOffset > habilCard2.offsetTop - 200 && window.pageYOffset < portifolio.offsetTop + 200){
         console.log("temn")
-        var fillCorel = document.querySelector(".fillCorel")
-        var fillLogo = document.querySelector(".fillLogo")
-        var fillBrand = document.querySelector(".fillBrand")
-        var fillLayout = document.querySelector(".fillLayout")
-        var numbCorel = document.querySelector(".nFillCorel");
-        var numbLogo = document.querySelector(".nFillLogo");
-        var numbBrand = document.querySelector(".nFillBrand");
-        var numbLayout = document.querySelector(".nFillLayout");
-        var counterCorel = 0;
-        var counterLogo = 0;
-        var counterBrand = 0;
-        var counterLayout = 0;
+        
 
         fillCorel.classList.add("fillCorelAni")
         fillLogo.classList.add("fillLogoAni")
@@ -160,6 +166,10 @@ window.addEventListener("scroll", ()=>{
             }else{
                 counterCorel++;
                 numbCorel.textContent = counterCorel + "%";
+
+                if(counterCorel == 75){
+                    clearInterval
+                }
             }
         }, 50);
 
