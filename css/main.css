@@ -323,7 +323,7 @@
     font-size: 28px;
 }
 
-.carousel{
+/**.carousel{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
@@ -404,7 +404,7 @@
 
 .carousel  #btn__next{
     right: 2%;
-}
+}*/
 
 
 
