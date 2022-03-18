@@ -581,7 +581,11 @@
     padding: none;
 }
 
-.contactar form{
+form div button{
+    background-color: rgb(254, 198, 37);
+}
+
+/*.contactar form{
     position: relative;
     min-width: 180px;
     top: 50%;

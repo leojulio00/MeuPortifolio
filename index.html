@@ -251,7 +251,7 @@
            <div class="row mt-5">
             <div class="owl-carousel owl-theme">
                 <div class="item mb-4">
-                    <div class="card border-0 shadow margin-15">
+                    <div class="card border-0 shadow" style="margin: 0px 15px">
                         <img src="img/fleo1.png" alt="Imagem1" class="card-img-top">
                         <div class="card-body">
                             <h4>Portifolio 1</h4>
@@ -262,7 +262,7 @@
                 <!--Finalizacao dos item-->
 
                 <div class="item mb-4">
-                    <div class="card border-0 shadow margin-15">
+                    <div class="card border-0 shadow" style="margin: 0px 15px">
                         <img src="img/fleo2.png" alt="Imagem1" class="card-img-top">
                         <div class="card-body">
                             <h4>Portifolio 1</h4>
@@ -273,7 +273,7 @@
                 <!--Finalizacao dos item-->
 
                 <div class="item mb-4">
-                    <div class="card border-0 shadow margin-15">
+                    <div class="card border-0 shadow" style="margin: 0px 15px">
                         <img src="img/fleo1.png" alt="Imagem1" class="card-img-top">
                         <div class="card-body">
                             <h4>Portifolio 1</h4>
@@ -284,7 +284,7 @@
                 <!--Finalizacao dos item-->
 
                 <div class="item mb-4">
-                    <div class="card border-0 shadow margin-15">
+                    <div class="card border-0 shadow" style="margin: 0px 15px">
                         <img src="img/fleo2.png" alt="Imagem1" class="card-img-top">
                         <div class="card-body">
                             <h4>Portifolio 1</h4>
@@ -422,28 +422,28 @@
 
                 <form class="row g-3">
                     <div class="col-md-6">
-                      <label for="inputEmail4" class="form-label">Nome</label>
-                      <input type="text" class="form-control" >
+                      <label for="inputNome" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="inputNome">
                     </div>
                     <div class="col-md-6">
-                      <label for="inputPassword4" class="form-label">Sobrenome</label>
-                      <input type="text" class="form-control" id="inputPassword4">
+                      <label for="inputSobrenome" class="form-label">Sobrenome</label>
+                      <input type="text" class="form-control" id="inputSobrenome">
+                    </div>
+                    <div class="col-12">
+                      <label for="inputEmail" class="form-label">E-mail</label>
+                      <input type="email" class="form-control" id="inputEmail">
                     </div>
                     <div class="col-12">
                       <label for="inputAddress" class="form-label">Endereço</label>
-                      <input type="text" class="form-control" id="inputAddress" placeholder="Obrigatorio">
-                    </div>
-                    <div class="col-12">
-                      <label for="inputAddress2" class="form-label">Endereço 2</label>
-                      <input type="text" class="form-control" id="inputAddress2" placeholder="Opcional">
+                      <input type="text" class="form-control" id="inputAddress">
                     </div>
                     <div class="col-md-6">
                       <label for="inputCity" class="form-label">Cidade</label>
                       <input type="text" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-4">
-                      <label for="inputState" class="form-label">Plano escolhido</label>
-                      <select id="inputState" class="form-select">
+                      <label for="inputPlano" class="form-label">Plano escolhido</label>
+                      <select id="inputPlano" class="form-select">
                         <option selected>Escolha...</option>
                         <option value="1">Básico</option>
                         <option value="2">Standard</option>
@@ -451,20 +451,21 @@
                       </select>
                     </div>
                     <div class="col-md-2">
-                      <label for="inputZip" class="form-label">Mais detalhes</label>
-                      <input type="text" class="form-control" id="inputZip">
+                      <label for="maisDetalhes" class="form-label">Mais detalhes</label>
+                      <textarea type="text" class="form-control" id="maisDetalhes"></textarea>
                     </div>
-                    <div class="col-12">
+                    <!--<div class="col-12">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="gridCheck">
                         <label class="form-check-label" for="gridCheck">
                           Concordo com os termos de servço
                         </label>
-                      </div>
+                      </div>-->
                     </div>
                     <div class="col-12">
-                      <button type="submit" class="btn btn-primary" style="color:#fec625;">Enviar</button>
+                      <button type="submit" class="btn btn-primary" style="background-color: rgb(254, 198, 37); font-weight: 600; margin: 15px 0px;">Enviar</button>
                     </div>
+                    
                   </form>
 
 
