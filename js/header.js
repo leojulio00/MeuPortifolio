@@ -40,8 +40,10 @@ cancelar.addEventListener("click", () => {
 input.addEventListener("click", () => {
     if(input.checked){
         menuList.style.left = "0px";
+        //menuList.style.margin = "-3px"
     }else{
         menuList.style.left = "-100%";
+        //menuList.style.margin = "-3px"
     }
 })
 

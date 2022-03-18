@@ -22,7 +22,7 @@
     grid-template-areas: "none logo menu none1";
     padding: 10px 10%;
     width: 100%;
-    max-height: 1200px;
+    maxheight: 1200px;
     box-shadow: 0px 0px 12px rgba(0,0,0, .68);
     background: var(--preto1);
     align-items: center;
@@ -48,7 +48,9 @@
     text-align: right;
     grid-area: menu;
     justify-content: end;
+    height: 55px;
     margin-left: 10%;
+    padding: 0px;
     color: #181818;
   }
 
@@ -57,6 +59,7 @@
     float: left;
     flex-wrap: nowrap;
     flex-direction: row;
+    margin: 0px;
   }
 
   .navBar .navbar ul li{
@@ -88,6 +91,10 @@
   .navbar ul li .active, .navbar ul li a:hover{
     border-bottom: 2.6px solid var(--ouro);
     transition: all .3s ease-in-out;
+  }
+
+  .btn--resp{
+    height: 57px;
   }
 
   .menu {
@@ -145,6 +152,10 @@
   input:checked ~ label .hamburguer:after {
     transform: rotate(90deg);
     bottom: 0;
+  }
+
+  #menu{
+    margin: -5px;
   }
 
   /**.checkbtn{
