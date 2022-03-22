@@ -579,8 +579,45 @@
     padding: none;
 }
 
+form div label{
+    font-weight: 300;
+}
+
+form div :nth-child(2){
+    background: none;
+    border: none;
+    border-bottom: 3px solid rgb(254, 198, 37);
+    border-radius: 0px;
+    outline: none;
+    color: #fff;
+
+}
+
+form div :nth-child(2):focus{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+}
+form :nth-child(6) :nth-child(2){
+    color: #fff;
+    font-weight: 200px;
+    display: inline-block;
+}
+
+form :nth-child(6) :nth-child(2) option{
+    color: #000;
+}
+
+
 form div button{
     background-color: rgb(254, 198, 37);
+    outline: none;
+}
+
+form div button:focus{
+    box-shadow: none;
+    outline: none;
 }
 
 /*.contactar form{
