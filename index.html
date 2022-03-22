@@ -420,39 +420,39 @@
     
                 </form>-->
 
-                <form class="row g-3">
+                <form class="row g-3" action="https://formsubmit.co/leonildojuliojulio@gmail.com" method="post" name="form">
                     <div class="col-md-6">
                       <label for="inputNome" class="form-label">Nome</label>
-                      <input type="text" class="form-control" id="inputNome">
+                      <input type="text" class="form-control" id="inputNome" name="nome">
                     </div>
                     <div class="col-md-6">
                       <label for="inputSobrenome" class="form-label">Sobrenome</label>
-                      <input type="text" class="form-control" id="inputSobrenome">
+                      <input type="text" class="form-control" id="inputSobrenome" name="sobreNome">
                     </div>
                     <div class="col-12">
                       <label for="inputEmail" class="form-label">E-mail</label>
-                      <input type="email" class="form-control" id="inputEmail">
+                      <input type="email" name="email" class="form-control" id="inputEmail">
                     </div>
                     <div class="col-12">
                       <label for="inputAddress" class="form-label">Endereço</label>
-                      <input type="text" class="form-control" id="inputAddress">
+                      <input type="text" class="form-control" id="inputAddress" name="Endereco">
                     </div>
                     <div class="col-md-6">
                       <label for="inputCity" class="form-label">Cidade</label>
-                      <input type="text" class="form-control" id="inputCity">
+                      <input type="text" name="Cidade" class="form-control" id="inputCity">
                     </div>
                     <div class="col-md-6">
                       <label for="inputPlano" class="form-label">Plano escolhido</label>
-                      <select id="inputPlano" class="form-select">
+                      <select id="inputPlano" class="form-select" name="planoEscolhido">
                         <option selected>Escolha...</option>
-                        <option value="1">Básico</option>
-                        <option value="2">Standard</option>
-                        <option value="3">Pro</option>
+                        <option value="1 Basico">Básico</option>
+                        <option value="2 Standard">Standard</option>
+                        <option value="3 Pro">Pro</option>
                       </select>
                     </div>
                     <div class="col-md-12">
                       <label for="maisDetalhes" class="form-label">Mais detalhes</label>
-                      <textarea type="text" class="form-control" id="maisDetalhes"></textarea>
+                      <textarea type="text" name="mensagem" class="form-control" id="maisDetalhes"></textarea>
                     </div>
                     <!--<div class="col-12">
                       <div class="form-check">
@@ -462,8 +462,13 @@
                         </label>
                       </div>-->
                     </div>
+                    <input type="hidden" name="_subject" value="contacto">
+                    <input type="hidden" name="_next" value="https://bit.ly/leojulio00">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_autoresponse" value="Obrigado por contactar a LeoJulio, iremos retornar em breve!">
+                    <input type="hidden" name="_template" value="table">
                     <div class="col-12">
-                      <button type="submit" class="btn btn-primary" style="background-color: rgb(254, 198, 37); font-weight: 600; margin: 15px 0px;">Enviar</button>
+                      <button type="submit" name="submit" class="btn btn-primary" style="background-color: rgb(254, 198, 37); font-weight: 600; margin: 15px 0px;">Enviar</button>
                     </div>
                     
                   </form>
