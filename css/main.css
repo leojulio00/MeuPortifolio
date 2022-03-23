@@ -326,9 +326,19 @@
 
 
 .item img{
-    max-width: 190px;
+    position: relative;
+    width: 100%;
+    maxwidth: 190px;
     max-height: 200px;
     object-fit: cover;
+    transition: transform .2s ease-in-out;
+}
+
+
+
+.item .zoom:hover{
+    transition: transform 1.4s ease-in-out;
+    transform: scale(1.2);
 }
 
 /**.carousel{
