@@ -1,4 +1,4 @@
-
+//DECLARAÇÃO DE VARIÁVEIS
 var body = document.querySelector(".body")
 var habil = document.querySelector(".habilidades")
 var habilCard1 = document.querySelector(".habilidades .card1")
@@ -7,8 +7,14 @@ var portifolio = document.querySelector(".portifolio")
 var precos = document.querySelector(".precos")
 var aJanela = window.pageYOffset; 
 const windowTop = window.screen.height
+const btnBasico = document.querySelector(".btnBasico")
+const btnStand = document.querySelector(".btnStand")
+const btnPro = document.querySelector(".btnPro")
+var selectPlano = document.querySelector(".form-select")
+const optionBasico = document.querySelector(".optionBasico")
+const optionStand= document.querySelector(".optionStand")
+const optionPro = document.querySelector(".optionPro")
 
-console.log(windowTop)
 
 /*function mudarCor(){
     if(habil > aJanela){
@@ -94,6 +100,8 @@ window.addEventListener("scroll", () => {
         var counterBrand = 0;
         var counterLayout = 0;
 
+
+//Evento de scrollbar no card1 da section habilidades
 window.addEventListener("scroll", ()=>{
 
     if(window.pageYOffset > habilCard1.offsetTop - 200 && window.pageYOffset < portifolio.offsetTop + 200){
@@ -148,7 +156,7 @@ window.addEventListener("scroll", ()=>{
 })
 
 
-
+//Evento de scrollbar no card2 da section habilidades
 window.addEventListener("scroll", ()=>{
 
     if(window.pageYOffset > habilCard2.offsetTop - 200 && window.pageYOffset < portifolio.offsetTop + 200){
@@ -203,6 +211,24 @@ window.addEventListener("scroll", ()=>{
     
 })
 
+//ADICIONANDO EVENTO AOS BOTOES DO CHECKOUT NA SECTION PREÇO
+btnBasico.addEventListener("click", () => {
+    window.location.href = "#contactar"
+
+    optionBasico.selected = "true"
+})
+
+btnStand.addEventListener("click", () => {
+    window.location.href = "#contactar"
+
+    optionStand.selected = "true"
+})
+
+btnPro.addEventListener("click", () => {
+    window.location.href = "#contactar"
+
+    optionPro.selected = "true"
+})
 
 
 
