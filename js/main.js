@@ -243,9 +243,6 @@ btnPro.addEventListener("click", () => {
 
 function popup(){
 
-    formPopup.classList.add("popupVisible")
+    //formPopup.classList.add("popupVisible")
     form.action = "https://formsubmit.co/leonildojuliojulio@gmail.com"
-    setTimeout(() => {
-        
-    }, 1000)
 }
