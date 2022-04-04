@@ -1,11 +1,10 @@
 .footer{
-    padding: 5%;
     background: #181818;
     color: white;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-
+    padding: 5%;
 }
 
 /*.footer .social{

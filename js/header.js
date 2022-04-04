@@ -66,7 +66,7 @@ window.addEventListener("scroll", () => {
         }
         
         
-        logo.src = "img/logo.png"
+        logo.src = "img/header/logo.png"
         
     }else{
         navBar.style.background = "#181818"
@@ -74,7 +74,7 @@ window.addEventListener("scroll", () => {
             const element = listaMenu[index];
             element.style.color = "#fff"
         } 
-        logo.src = "img/logo00.png"
+        logo.src = "img/header/logo00.png"
     }
 
     if(window.pageYOffset > precos.offsetTop - 80){
@@ -92,7 +92,7 @@ window.addEventListener("scroll", () => {
                 element.style.color = "#fff"
             }
         } 
-        logo.src = "img/logo.png"
+        logo.src = "img/header/logo.png"
     }
 })
 

@@ -1,13 +1,17 @@
-
+.main{
+    width: 100%;
+    justify-content: center;
+}
 
 .main .sobreMim{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5%;
+    padding-top: 60px;
     backgroundcolor: #212121;
     align-items: center;
     align-content: center;
+    
 }
 
 /*.main .sobreMim .tSobreMim{
@@ -74,10 +78,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 5%;
+    padding-top: 30px;
     align-content: space-between;
     /*background: black;*/
     transition: all 1s ease-in-out;
+    
 }
 
 .habilidades .tHabilidades{
@@ -97,6 +102,7 @@
 .habilidades .tHabilidades h1{
     width: 215px;
     text-align: left;
+    color: #fff;
     padding: 5px;
     border-bottom: 3px solid rgb(254, 198, 37);
 }
@@ -300,9 +306,9 @@
 
 
 .portifolio{
-    padding: 5%;
     align-items: center;
     align-content: center;
+    padding-top: 60px;
     margin: -30px 0px 40px 0px;
     width: 100%;
 }
@@ -433,10 +439,11 @@
 
 
 .precos{
-    padding: 10%;
     align-items: center;
     align-content: center;
     backgroundcolor: #212121;
+    padding-top: 100px;
+    margin: 100px 0px;
 }
 
 .txtPreco{
@@ -575,11 +582,12 @@
 
 .contactar{
     position: relative;
-    padding: 10%;
-    background: #3d3d3d;
+    backround: #3d3d3d;
     color: white;
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
+    margin: 100px 10%;
 }
 
 .txtContactar{
@@ -607,7 +615,7 @@ form div label{
     font-weight: 300;
 }
 
-form div :nth-child(2){
+form div .form-control{
     background: none;
     border: none;
     border-bottom: 3px solid rgb(254, 198, 37);
@@ -617,19 +625,37 @@ form div :nth-child(2){
 
 }
 
-form div :nth-child(2):focus{
+form div .form-control:focus{
     background: none;
     outline: none;
     box-shadow: none;
     color: #fff;
 }
-form :nth-child(6) :nth-child(2){
+
+form .form-select{
+    background: none;
+    border: none;
+    border-bottom: 3px solid rgb(254, 198, 37);
+    border-radius: 0px;
+    outline: none;
     color: #fff;
-    font-weight: 200px;
-    display: inline-block;
 }
 
-form :nth-child(6) :nth-child(2) option{
+form .form-select:focus{
+    background: none;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+}
+
+form .form-select .formOption{
+    color: white;
+    font-weight: 200px;
+    display: inline-block;
+    background-color: #212121;
+}
+
+form .form-select :nth-child(2) option{
     color: #000;
 }
 
@@ -642,6 +668,96 @@ form div button{
 form div button:focus{
     box-shadow: none;
     outline: none;
+}
+
+.formPopup{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background: rgba(61, 61, 61, .8);
+    z-index: 500;
+    visibility: visible;
+    transform: translate(-1200px) scale(0.1);
+}
+
+.popupVisible{
+    visibility: visible;
+    transform: translate(0px) scale(1);
+}
+
+.popup{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: #fff;
+    color: black;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 450px;
+    margin: 80px 70px;
+    border: none;
+    border-radius: 15px;
+}
+
+.popup .img{
+    position: absolute;
+    top: 0;
+    margin-top: -60px;
+    
+}
+
+.popup .img img{
+    width: 120px;
+    
+}
+
+.popup .txt{
+    margin-top: 50px;  
+    padding: 20px;
+}
+
+.popup .txt h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.popup .txt p{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.popup .btn{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.popup .btn button{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    width: 80%;
+    margin: 0px 0px 30px 0px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    background: #fec625;
+    border: none;
+    border-radius: 35px;
+    outline: none;
+    box-shadow: 0px 0px 10px #aaa;
+    color: white;
 }
 
 /*.contactar form{

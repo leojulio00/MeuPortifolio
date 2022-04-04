@@ -14,6 +14,9 @@ var selectPlano = document.querySelector(".form-select")
 const optionBasico = document.querySelector(".optionBasico")
 const optionStand= document.querySelector(".optionStand")
 const optionPro = document.querySelector(".optionPro")
+const formBtn = document.querySelector(".formBtn")
+const formPopup = document.querySelector(".formPopup")
+const form = document.querySelector(".form")
 
 
 /*function mudarCor(){
@@ -45,7 +48,7 @@ addEventListener("scroll", function() {
 
 //ANIMACAO DO BODY
 body.style.background = "#212121"
-console.log(windowTop - (windowTop * 0.3) )
+
 
 
 window.addEventListener("scroll", () => {
@@ -160,7 +163,6 @@ window.addEventListener("scroll", ()=>{
 window.addEventListener("scroll", ()=>{
 
     if(window.pageYOffset > habilCard2.offsetTop - 200 && window.pageYOffset < portifolio.offsetTop + 200){
-        console.log("temn")
         
 
         fillCorel.classList.add("fillCorelAni")
@@ -232,5 +234,18 @@ btnPro.addEventListener("click", () => {
 
 
 
+/*formBtn.addEventListener("clich", () => {
+    alert("clicou")
+    console.log("clicou")
+    formPopup.classList.add("popupVisible")
+})*/
  
 
+function popup(){
+
+    formPopup.classList.add("popupVisible")
+    form.action = "https://formsubmit.co/leonildojuliojulio@gmail.com"
+    setTimeout(() => {
+        
+    }, 1000)
+}
